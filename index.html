@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jokenpo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-table">
+            <h1>JOGADOR <span><b id="playerPoints">0</b> PONTOS</span> </h1>
+        <div class="col-12" id="player">
+            <div class="img text-center">
+                <img src="img/pedra.png" class="shot" onclick="play(0)" onmouseover="mouseOver('playerShot-0')" onmouseout="mouseOut('playerShot-0')" id="playerShot-0">
+                <img src="img/papel.png" class="shot" onclick="play(1)" onmouseover="mouseOver('playerShot-1')" onmouseout="mouseOut('playerShot-1')" id="playerShot-1">
+                <img src="img/tesoura.png" class="shot" onclick="play(2)" onmouseover="mouseOver('playerShot-2')" onmouseout="mouseOut('playerShot-2')" id="playerShot-2">
+            </div>
+        </div>
+        <h1>COMPUTADOR <span><b id="computerPoints"> 0 </b> PONTOS</span> </h1>
+        <div class="col-12" id="computer">
+            <div class="img text-center">
+                <img src="img/pedra.png" class="shot-computer" id="pcShot-0">
+                <img src="img/papel.png" class="shot-computer" id="pcShot-1">
+                <img src="img/tesoura.png" class="shot-computer" id="pcShot-2">
+            </div>
+        </div>
+        <div class="text-center">
+            <div id="message"></div>.
+            <button type="button" class="btn btn-danger" onclick="restart()">Reiniciar</button>
+            <button type="button" class="btn btn-primary" onclick="restore()">Jogar novamente</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

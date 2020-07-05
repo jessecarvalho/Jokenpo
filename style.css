@@ -1,0 +1,45 @@
+button {
+    margin-top: 5%;
+}
+
+h1{
+    margin-left: 3%;
+    font-size: 2em;
+}
+
+span{
+    margin-right: 3%;
+    float: right;
+}
+
+#player {
+    background-color: #81AE9D;
+}
+
+#computer {
+    background-color: #683257;
+}
+
+#message{
+    font-size: 2.5em;
+    margin-top: 4%;
+}
+
+.shot, .shot-computer{
+    width: 30%;
+    opacity: .5;
+}
+
+@media only screen and (min-width: 960px) {
+    #game-table{
+        margin: 15% auto;
+        width: 50%;
+    }
+    .shot, .shot-computer{
+        width: 10%;
+        opacity: .5;
+    }
+    .img{
+        margin-left: 0 auto;
+    }
+}
